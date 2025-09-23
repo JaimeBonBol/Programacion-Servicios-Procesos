@@ -1,0 +1,10 @@
+INFO;Se cargó la configuración inicial
+WARN;Uso de CPU por encima del 90%
+ERROR;Permiso denegado al acceder al directorio
+INFO;Conexión establecida con el servidor
+INFO;Archivo procesado correctamente
+WARN;Espacio en disco por debajo del 10%
+ERROR;Timeout al conectar con el servicio externo
+INFO;Reinicio programado completado
+INFO;Nueva sesión iniciada por el usuario admin
+WARN;Conexiones simultáneas superan el umbral recomendado
