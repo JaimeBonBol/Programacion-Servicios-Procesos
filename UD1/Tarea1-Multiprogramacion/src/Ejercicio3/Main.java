@@ -55,9 +55,8 @@ public class Main {
 
             long finTiempo = System.currentTimeMillis();
 
-            long tiempoTranscurrido = (finTiempo -  inicioTiempo) / 1000;
             System.out.println();
-            System.out.println("Fin de forma SECUENCIAL, timepo transcurrido: " + tiempoTranscurrido );
+            System.out.println("Fin de forma SECUENCIAL, timepo transcurrido: " + (finTiempo - inicioTiempo) / 1000.0 );
 
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
@@ -87,9 +86,8 @@ public class Main {
 
             long finTiempo = System.currentTimeMillis();
 
-            long tiempoTranscurrido = (finTiempo - inicioTiempo) / 1000;
             System.out.println();
-            System.out.println("Fin de forma CONCURRENTE, tiempo transcurrido: " + tiempoTranscurrido);
+            System.out.println("Fin de forma CONCURRENTE, tiempo transcurrido: " + (finTiempo - inicioTiempo) / 1000.0);
 
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
