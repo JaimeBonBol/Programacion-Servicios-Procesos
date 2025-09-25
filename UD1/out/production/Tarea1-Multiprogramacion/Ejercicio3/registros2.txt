@@ -7,3 +7,85 @@ INFO;Petición recibida en el puerto 8080
 INFO;Consulta SQL ejecutada correctamente
 WARN;Tiempo de respuesta alto en la API
 ERROR;No se pudo abrir el socket
+INFO;Inicio del programa
+ERROR;No se pudo conectar a la BD
+INFO;Usuario logueado
+WARN;Memoria al 80%
+ERROR;Archivo no encontrado
+INFO;Petición recibida en el puerto 8080
+INFO;Consulta SQL ejecutada correctamente
+WARN;Tiempo de respuesta alto en la API
+ERROR;No se pudo abrir el socket
+INFO;Inicio del programa
+ERROR;No se pudo conectar a la BD
+INFO;Usuario logueado
+WARN;Memoria al 80%
+ERROR;Archivo no encontrado
+INFO;Petición recibida en el puerto 8080
+INFO;Consulta SQL ejecutada correctamente
+WARN;Tiempo de respuesta alto en la API
+ERROR;No se pudo abrir el socket
+INFO;Inicio del programa
+ERROR;No se pudo conectar a la BD
+INFO;Usuario logueado
+WARN;Memoria al 80%
+ERROR;Archivo no encontrado
+INFO;Petición recibida en el puerto 8080
+INFO;Consulta SQL ejecutada correctamente
+WARN;Tiempo de respuesta alto en la API
+ERROR;No se pudo abrir el socket
+INFO;Inicio del programa
+ERROR;No se pudo conectar a la BD
+INFO;Usuario logueado
+WARN;Memoria al 80%
+ERROR;Archivo no encontrado
+INFO;Petición recibida en el puerto 8080
+INFO;Consulta SQL ejecutada correctamente
+WARN;Tiempo de respuesta alto en la API
+ERROR;No se pudo abrir el socket
+INFO;Inicio del programa
+ERROR;No se pudo conectar a la BD
+INFO;Usuario logueado
+WARN;Memoria al 80%
+ERROR;Archivo no encontrado
+INFO;Petición recibida en el puerto 8080
+INFO;Consulta SQL ejecutada correctamente
+WARN;Tiempo de respuesta alto en la API
+ERROR;No se pudo abrir el socket
+INFO;Inicio del programa
+ERROR;No se pudo conectar a la BD
+INFO;Usuario logueado
+WARN;Memoria al 80%
+ERROR;Archivo no encontrado
+INFO;Petición recibida en el puerto 8080
+INFO;Consulta SQL ejecutada correctamente
+WARN;Tiempo de respuesta alto en la API
+ERROR;No se pudo abrir el socket
+INFO;Inicio del programa
+ERROR;No se pudo conectar a la BD
+INFO;Usuario logueado
+WARN;Memoria al 80%
+ERROR;Archivo no encontrado
+INFO;Petición recibida en el puerto 8080
+INFO;Consulta SQL ejecutada correctamente
+WARN;Tiempo de respuesta alto en la API
+ERROR;No se pudo abrir el socket
+INFO;Inicio del programa
+ERROR;No se pudo conectar a la BD
+INFO;Usuario logueado
+WARN;Memoria al 80%
+ERROR;Archivo no encontrado
+INFO;Petición recibida en el puerto 8080
+INFO;Consulta SQL ejecutada correctamente
+WARN;Tiempo de respuesta alto en la API
+ERROR;No se pudo abrir el socket
+INFO;Inicio del programa
+ERROR;No se pudo conectar a la BD
+INFO;Usuario logueado
+WARN;Memoria al 80%
+ERROR;Archivo no encontrado
+INFO;Petición recibida en el puerto 8080
+INFO;Consulta SQL ejecutada correctamente
+WARN;Tiempo de respuesta alto en la API
+ERROR;No se pudo abrir el socket
+

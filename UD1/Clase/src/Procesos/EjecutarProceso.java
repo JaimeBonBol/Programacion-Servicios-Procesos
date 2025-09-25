@@ -28,11 +28,11 @@ public class EjecutarProceso {
                     break;
 
                 case 3:
-                    ejemploProceso3();
+                    ejemploSecuencial3();
                     break;
 
                 case 4:
-                    ejemploProceso4();
+                    ejemploConcurrente3();
                     break;
 
                 case 0:
@@ -82,7 +82,7 @@ public class EjecutarProceso {
     /**
      * Ejecución secuencial
      */
-    public static void ejemploProceso3(){
+    public static void ejemploSecuencial3(){
         try {
 
             System.out.println(" --- Ejecunción secuencial ---");
@@ -106,7 +106,7 @@ public class EjecutarProceso {
     /**
      * Ejecución concurrente
      */
-    public static void ejemploProceso4(){
+    public static void ejemploConcurrente3(){
         try {
 
             System.out.println(" --- Ejecunción concurrente ---");
