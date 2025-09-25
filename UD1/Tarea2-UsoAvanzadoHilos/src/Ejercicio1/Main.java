@@ -70,10 +70,10 @@ public class Main {
         try {
             BufferedReader br = new BufferedReader(new FileReader(fichero));
 
-
             String linea;
             while ((linea = br.readLine()) != null){
-                contaje = Integer.parseInt(linea);
+                String[] palabrasLinea = linea.split(":");
+                contaje = Integer.parseInt(palabrasLinea[1]);
             }
 
             br.close();
