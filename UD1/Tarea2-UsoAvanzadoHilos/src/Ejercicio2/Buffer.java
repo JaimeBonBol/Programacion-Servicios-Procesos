@@ -10,7 +10,7 @@ public class Buffer {
     // Método para que el productor añada un número aleatorio al buffer si este tiene hueco.
     // Con el synchronized aseguramos que si hay mas de un hilo que utiliza este mismo recurso, solo ejecuta este método
     // un hilo (el primero que llege hecha el cerrojo).
-    public synchronized void producir(){
+    public synchronized void producir(String nombre){
         // Si el arrayList tiene 3 elementos espera.
         while (datosBuffer.size() == 3){
             try {
@@ -25,15 +25,15 @@ public class Buffer {
         // Producce un número aleatorio entre el 0 al 99.
         int numRandom = random.nextInt(100);
         datosBuffer.addFirst(numRandom);
-        System.out.println("Productor añadió al buffer el numero " + numRandom);
+        System.out.println("Productor " + nombre + " añadió al buffer el numero " + numRandom);
         mostrarBuffer();
 
-        notify();
+        notifyAll();
 
     }
 
     // Método para que el consumidor obtenga un número del buffer si este no está vacío.
-    public synchronized void consumir(){
+    public synchronized void consumir(String nombre){
         // Si el buffer está vacío espera.
         while (datosBuffer.isEmpty()){
             try {
@@ -44,10 +44,10 @@ public class Buffer {
         }
 
         int numConsumido = datosBuffer.removeLast();
-        System.out.println("El consumidor obtuvo del buffer el número " + numConsumido);
+        System.out.println("El consumidor " + nombre + " obtuvo del buffer el número " + numConsumido);
         mostrarBuffer();
 
-        notify();
+        notifyAll();
     }
 
     public void mostrarBuffer(){
