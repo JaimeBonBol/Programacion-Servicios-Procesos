@@ -1,7 +1,9 @@
+package ProblemaConcurrencia;
+
 public class Coche extends Thread{
 
     private String nombre;
-    private boolean pasando;
+    private Via via;
 
     public Coche(String nombre){
         this.nombre = nombre;
@@ -9,8 +11,8 @@ public class Coche extends Thread{
 
     @Override
     public void run() {
-        System.out.println("Pasando por la vía");
-        pasando = true;
+        via.entrarVia(nombre);
+        System.out.println();
     }
 
     public String getNombre() {
@@ -21,11 +23,11 @@ public class Coche extends Thread{
         this.nombre = nombre;
     }
 
-    public boolean isPasando() {
-        return pasando;
+    public Via getVia() {
+        return via;
     }
 
-    public void setPasando(boolean pasando) {
-        this.pasando = pasando;
+    public void setVia(Via via) {
+        this.via = via;
     }
 }
