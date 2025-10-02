@@ -11,6 +11,11 @@ public class Via {
         this.ocupada = ocupada;
     }
 
+    /**
+     * Método para entrar en la vía, si no está ocupada entra, simula que tarda 2 segundos en recorrerla y sale. Si está
+     * ocupada hay colisión puesto que no pueden pasar dos coches simultáneamente
+     * @param nombreCoche
+     */
     public void entrarVia(String nombreCoche){
         System.out.println(nombreCoche + " intenta entrar...");
 
