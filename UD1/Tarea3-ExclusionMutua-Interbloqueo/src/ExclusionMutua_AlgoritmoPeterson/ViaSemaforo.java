@@ -16,7 +16,7 @@ public class ViaSemaforo {
             System.out.println(nombreCoche + " entra en la vía.");
             Thread.sleep(2000);
             System.out.println(nombreCoche + " sale de la vía.");
-            
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {

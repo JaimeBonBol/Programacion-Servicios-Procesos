@@ -9,7 +9,6 @@ public class ViaLock {
 
     public void entrarVia(String nombreCoche) {
 
-
         try {
             // intenta tomar el lock, espera máximo 1 segundo
             if (lock.tryLock(1, TimeUnit.SECONDS)){
