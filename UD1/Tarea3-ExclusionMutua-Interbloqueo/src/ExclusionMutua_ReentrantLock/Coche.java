@@ -1,12 +1,12 @@
-package ExclusionMutua_AlgoritmoPeterson;
+package ExclusionMutua_ReentrantLock;
 
 public class Coche extends Thread{
 
     private int id;
     private String nombre;
-    private Via via;
+    private ViaLock via;
 
-    public Coche(int id, String nombre, Via via){
+    public Coche(int id, String nombre, ViaLock via){
         this.id = id;
         this.nombre = nombre;
         this.via = via;
@@ -14,6 +14,6 @@ public class Coche extends Thread{
 
     @Override
     public void run() {
-        via.entrarVia(id, nombre);
+        via.entrarVia( nombre);
     }
 }

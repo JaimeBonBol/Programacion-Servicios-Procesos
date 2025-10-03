@@ -1,16 +1,20 @@
-package ExclusionMutua_AlgoritmoPeterson;
+package ExclusionMutua_ReentrantLock;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 
+
 public class ViaLock {
 
+    // Lock que controla la exclusión mutua
     private ReentrantLock lock = new ReentrantLock();
+
+
 
     public void entrarVia(String nombreCoche) {
 
         try {
-            // intenta tomar el lock, espera máximo 1 segundo
+            // Intenta tomar el lock, espera máximo 1 segundo
             if (lock.tryLock(1, TimeUnit.SECONDS)){
                 try {
 
@@ -20,12 +24,14 @@ public class ViaLock {
 
                 } catch (Exception e) {
                     System.out.println(e.getMessage());
+
                 }finally {
-                    lock.unlock(); // libera el lock
+                    // Libera el lock
+                    lock.unlock();
                 }
 
-
             }else {
+                // Si no consigue el lock en un segundo hace otra cosa.
                 System.out.println(nombreCoche + " se cansó de esperar.");
             }
 

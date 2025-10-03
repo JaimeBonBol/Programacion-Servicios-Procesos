@@ -1,6 +1,8 @@
 package ExclusionMutua_Sincronización;
 
 public class Via {
+
+    // Indica si la vía está en uso.
     private boolean ocupada = false;
 
     public boolean isOcupada() {
@@ -12,9 +14,10 @@ public class Via {
     }
 
     /**
-     * Método para entrar en la vía, si no está ocupada entra, simula que tarda 2 segundos en recorrerla y sale. Si está
-     * ocupada hay colisión puesto que no pueden pasar dos coches simultáneamente
-     * @param nombreCoche
+     * Método sincronizado para que un coche entre en la vía.
+     * Si la vía está ocupada, el hilo (coche) espera hasta que quede libre.
+     *
+     * @param nombreCoche nombre del coche que intenta entrar.
      */
     public synchronized void entrarVia(String nombreCoche){
         System.out.println(nombreCoche + " intenta entrar...");
@@ -28,7 +31,7 @@ public class Via {
             }
         }
 
-        // Simulación recorrido COche en vía.
+        // En este punto la vía está libre por lo tanto el coche entra en la vía.
         System.out.println(nombreCoche + " entra en la vía.");
         ocupada = true;
 
@@ -39,11 +42,12 @@ public class Via {
             throw new RuntimeException(e);
         }
 
-        // Salida de la vía.
+        // Salida de la vía, libera la vía.
         System.out.println(nombreCoche + " sale de la vía.");
         ocupada = false;
 
-        notifyAll(); // despierta a los hilos que estaban esperando
+        // Avisa a los hilos (coches) que estaban esperando en wait()
+        notifyAll();
 
     }
 

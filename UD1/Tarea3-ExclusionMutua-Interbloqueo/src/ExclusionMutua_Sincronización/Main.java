@@ -7,6 +7,7 @@ public class Main {
         // Se crea la via compartida. (Seccion crítica).
         Via via = new Via();
 
+        // Se crean varios coches que comparten la misma vía.
         Coche coche1 = new Coche("Coche 1", via);
         Coche coche2 = new Coche("Coche 2", via);
         Coche coche3 = new Coche("Coche 3", via);
