@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfd04dfc-aefd-41bf-beb7-12e082ee1374" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Programacion-Servicios-Procesos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Programacion-Servicios-Procesos.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UD1/Tarea3-ExclusionMutua-Interbloqueo/src/SolucionExclusionMutua_Semaphore/ViaSemaforo.java" beforeDir="false" afterPath="$PROJECT_DIR$/UD1/Tarea3-ExclusionMutua-Interbloqueo/src/SolucionExclusionMutua_Semaphore/ViaSemaforo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UD1/out/production/Tarea3-ExclusionMutua-Interbloqueo/SolucionExclusionMutua_Semaphore/ViaSemaforo.class" beforeDir="false" afterPath="$PROJECT_DIR$/UD1/out/production/Tarea3-ExclusionMutua-Interbloqueo/SolucionExclusionMutua_Semaphore/ViaSemaforo.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
