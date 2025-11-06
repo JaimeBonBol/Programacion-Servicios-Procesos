@@ -59,4 +59,19 @@ public class PeliculaController {
         return service.getMejoresPeliculas();
     }
 
+    @GetMapping("/reproducirAsync")
+    public String reproducirPeliculasAsync(){
+        long inicio = System.currentTimeMillis();
+
+        var t1 = service.reproducir("Interstellar");
+        var t2 = service.reproducir("The Dark Knight");
+        var t3 = service.reproducir("Soul");
+
+        // Espera a que terminen todas las tareas
+        CompletableFuture.allOf(t1, t2, t3).join();
+
+        long fin = System.currentTimeMillis();
+        return "Tiempo total (asíncrono): " + (fin - inicio) + " ms";
+    }
+
 }

@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.scheduling.annotation.Async;
+
+import java.util.Random;
 import java.util.concurrent.CompletableFuture;
 
 @Service
@@ -81,5 +83,29 @@ public class PeliculaService {
         }
 
         return mejoresPeliculas;
+    }
+
+    @Async("taskExecutor")
+    public CompletableFuture<String> reproducir(String titulo) {
+        long inicio = System.currentTimeMillis();
+
+        try {
+            Random random = new Random();
+            int numeroAleatorio = random.nextInt(5) + 1;
+
+
+            System.out.println("Iniciando " + titulo + " en " + Thread.currentThread().getName());
+            Thread.sleep(numeroAleatorio * 1000);
+            System.out.println("Terminado la película " + titulo);
+
+
+
+        } catch (InterruptedException e) {
+            System.out.println(e.getMessage());;
+        }
+
+        long fin = System.currentTimeMillis();
+        long tiempoTotalSeg = (fin - inicio) / 1000;
+        return CompletableFuture.completedFuture("Terminada " + titulo + " en " + tiempoTotalSeg + " segundos");
     }
 }
