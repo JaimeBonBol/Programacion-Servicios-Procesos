@@ -20,11 +20,11 @@ public class PeliculaService {
 
     public PeliculaService() {
         peliculas.add(new Pelicula(1L, "Interstellar", 169, LocalDate.of(2014, 11, 7),
-                "Exploradores espaciales buscan un nuevo hogar para la humanidad.", 3));
+                "Exploradores espaciales buscan un nuevo hogar para la humanidad.", 3, null, null, null));
         peliculas.add(new Pelicula(2L, "The Dark Knight", 152, LocalDate.of(2008, 7, 18),
-                "Batman enfrenta al Joker en una lucha por el alma de Gotham.", 6));
+                "Batman enfrenta al Joker en una lucha por el alma de Gotham.", 6, null, null, null));
         peliculas.add(new Pelicula(3L, "Soul", 100, LocalDate.of(2020, 12, 25),
-                "Un músico descubre el sentido de la vida más allá de la muerte.", 8));
+                "Un músico descubre el sentido de la vida más allá de la muerte.", 8, null, null, null));
     }
 
     public List<Pelicula> listar() {
