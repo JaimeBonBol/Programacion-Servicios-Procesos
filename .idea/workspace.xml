@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfd04dfc-aefd-41bf-beb7-12e082ee1374" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/UD1/Tarea3-ExclusionMutua-Interbloqueo/src/SolucionExclusionMutua_Semaphore/ViaSemaforo.java" beforeDir="false" afterPath="$PROJECT_DIR$/UD1/Tarea3-ExclusionMutua-Interbloqueo/src/SolucionExclusionMutua_Semaphore/ViaSemaforo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UD1/out/production/Tarea3-ExclusionMutua-Interbloqueo/SolucionExclusionMutua_Semaphore/ViaSemaforo.class" beforeDir="false" afterPath="$PROJECT_DIR$/UD1/out/production/Tarea3-ExclusionMutua-Interbloqueo/SolucionExclusionMutua_Semaphore/ViaSemaforo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sockets/Sockets.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sockets/src/Ejercicio1/CifradoCesar.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sockets/src/Ejercicio1/CifradoCesar.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -24,16 +33,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/jaimedam/Escritorio/2DAM/Programacion-Servicios-Procesos/UD1&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Cliente.executor": "Run",
+    "Application.Servidor.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/jaimedam/Escritorio/2DAM/Programacion-Servicios-Procesos",
+    "onboarding.tips.debug.path": "/home/jaimedam/Escritorio/2DAM/Programacion-Servicios-Procesos/Sockets/src/Main.java"
   }
-}</component>
+}]]></component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="cfd04dfc-aefd-41bf-beb7-12e082ee1374" name="Changes" comment="" />
@@ -43,5 +58,8 @@
       <updated>1758295691881</updated>
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
