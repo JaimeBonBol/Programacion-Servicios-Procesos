@@ -26,24 +26,26 @@ public class Servidor {
 
             System.out.println("Cliente conectado");
             // Recuperar operación del cliente
-            String operacion = in.readLine();
-
-            // Recuperar la cadena deel cliente
-            String cadena = null;
-            switch (operacion){
-                case "Cifrar":
-                    out.println("Pasame la cadena");
-                    cadena = in.readLine();
-                    out.println(CifradoCesar.cifrarCadena(cadena));
-                    break;
-                case "Descifrar":
-                    out.println("Pasame la cadena");
-                    cadena = in.readLine();
-                    out.println(CifradoCesar.descifrarCadena(cadena));
-                    break;
-                default:
-                    out.println("Operación no válida");
+            String operacion;
+            while ((operacion = in.readLine()) != null && !operacion.equals("Exit")){
+                // Recuperar la cadena deel cliente
+                String cadena = null;
+                switch (operacion){
+                    case "Cifrar":
+                        out.println("Pasame la cadena");
+                        cadena = in.readLine();
+                        out.println(cifrarCadena(cadena));
+                        break;
+                    case "Descifrar":
+                        out.println("Pasame la cadena");
+                        cadena = in.readLine();
+                        out.println(descifrarCadena(cadena));
+                        break;
+                    default:
+                        out.println("Operación no válida");
+                }
             }
+            out.println("Adios");
 
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -51,11 +53,39 @@ public class Servidor {
     }
 
     public static String cifrarCadena(String cadena) {
-        return cadena;
+        int rango = ('z' - 'a') + 1;
+        int desplazamiento = 3;
+        String resultado = "";
+        for (int i = 0; i < cadena.length(); i++) {
+            char c = cadena.charAt(i);
+
+            if (c >= 'a' && c<= 'z'){
+                resultado += (char) (((c - 'a' + desplazamiento) % rango) + 'a');
+            }else if(c >= 'A' && c<= 'Z'){
+                resultado += (char) (((c-'A' + desplazamiento) % rango) + 'A');
+            }else {
+                resultado += c;
+            }
+        }
+        return resultado;
     }
 
     public static String descifrarCadena(String cadena) {
-        return cadena;
+        int rango = ('z' - 'a') + 1;
+        int desplazamiento = 3;
+        String resultado = "";
+        for (int i = 0; i < cadena.length(); i++) {
+            char c = cadena.charAt(i);
+
+            if (c >= 'a' && c<= 'z'){
+                resultado += (char) (((c - 'a' - desplazamiento + rango) % rango) + 'a');
+            }else if(c >= 'A' && c<= 'Z'){
+                resultado += (char) (((c-'A' - desplazamiento + rango) % rango) + 'A');
+            }else {
+                resultado += c;
+            }
+        }
+        return resultado;
     }
 }
 

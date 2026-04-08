@@ -32,8 +32,23 @@ public class Cliente {
                 // Enviar cadena
                 out.println("Hola");
                 String cadenaDevuelta = in.readLine();
-                System.out.println(cadenaDevuelta);
+                System.out.println("Cifrado: " + cadenaDevuelta);
             }
+
+            // Mandarle a descifrar
+            out.println("Descifrar");
+            // Recibir la respuesta del servidor
+            respuesta = in.readLine();
+
+            if (respuesta.equals("Pasame la cadena")){
+                // Enviar cadena
+                out.println("AbC");
+                String cadenaDevuelta = in.readLine();
+                System.out.println("Descifrado: " + cadenaDevuelta);
+            }
+
+            out.println("Exit");
+            System.out.println(in.readLine());
 
         } catch (UnknownHostException e) {
             throw new RuntimeException(e);
