@@ -1,4 +1,4 @@
-package Ejercicio1;
+package EjercicioClase1;
 
 import java.io.*;
 
