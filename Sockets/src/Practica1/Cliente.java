@@ -70,60 +70,60 @@ public class Cliente {
                 // Si la opción es 1, sabemos que el servidor nos va a hablar 3 veces
                 if (opcion.equals("1")) {
 
-                    // 1. Recibir petición del primer número
+                    // Recibir petición del primer número
                     String orden1 = in.readLine();
                     if (orden1.equals("num1_sumar")){
                         System.out.print("Introduce el primer número a sumar: ");
                         out.println(sc.nextLine());
                     }
 
-                    // 2. Recibir petición del segundo número
+                    // Recibir petición del segundo número
                     String orden2 = in.readLine();
                     if (orden2.equals("num2_sumar")) {
                         System.out.print("Introduce el segundo número a sumar: ");
                         out.println(sc.nextLine());
                     }
 
-                    // 3. Recibir el resultado final e imprimirlo
+                    // Recibir el resultado final e imprimirlo
                     String resultadoFinal = in.readLine();
                     System.out.println("Servidor dice que el resultado es: " + resultadoFinal);
                 }
 
                 if (opcion.equals("2")){
-                    // 1. Recibir petición de la palabra
+                    // Recibir petición de la palabra
                     String orden1 = in.readLine();
                     if (orden1.equals("palabra_contador")){
                         System.out.print("Introduce la palabra para contar sus vocales: ");
                         out.println(sc.nextLine());
                     }
 
-                    // 2. Recibir el resultado final e imprimirlo
+                    // Recibir el resultado final e imprimirlo
                     String numeroVocales = in.readLine();
                     System.out.println("Servidor dice que son " + numeroVocales + " vocales");
                 }
 
                 if (opcion.equals("3")){
-                    // 1. Recibir petición del texot
+                    // Recibir petición del texot
                     String orden1 = in.readLine();
                     if (orden1.equals("texto_invertir")){
                         System.out.println("Introduce el texto para invertirlo: ");
                         out.println(sc.nextLine());
                     }
 
-                    // 2. Recibir el resultado final e imprimirlo
+                    // Recibir el resultado final e imprimirlo
                     String textoInvertido = in.readLine();
                     System.out.println("Servidor dice que el texto invertido es: " + textoInvertido);
                 }
 
                 if (opcion.equals("4")){
-                    // 1. Recibir petición del texot
+                    // Recibir petición del texot
                     String orden1 = in.readLine();
                     if (orden1.equals("numero_primo")){
                         System.out.println("Introduce un número para compronar si es primo: ");
                         out.println(sc.nextLine());
                     }
 
-                    // 2. Recibir el resultado final e imprimirlo
+                    // Recibir el resultado final e imprimirlo
                     String numeroPrimo = in.readLine();
                     System.out.println( numeroPrimo );
                 }
