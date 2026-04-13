@@ -10,7 +10,7 @@ import java.net.UnknownHostException;
 public class Cliente {
     public static void main(String[] args) {
         try (
-                Socket socket = new Socket("localhost", 7000);
+                Socket socket = new Socket("localhost", 1234);
                 // Enviar mensaje
                 PrintWriter out = new PrintWriter(
                         socket.getOutputStream(),true

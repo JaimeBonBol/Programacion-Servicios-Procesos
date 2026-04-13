@@ -10,82 +10,22 @@ import java.net.Socket;
 public class Servidor {
     public static void main(String[] args) {
         System.out.println("Servidor levantado y esperando");
-        try (
-                ServerSocket serverSocket = new ServerSocket(7000);
+        try {
+            ServerSocket serverSocket = new ServerSocket(7000);
+            System.out.println("Servidor concurrente escuchando en el puerto 7000...");
+
+            while (true){
                 // Bloqueo: Esperando cliente
                 Socket cliente = serverSocket.accept();
-                // Leer mensaje del cliente
-                BufferedReader in = new BufferedReader(
-                        new InputStreamReader(cliente.getInputStream())
-                );
-                // Enviar un mensaje al cliente
-                PrintWriter out = new PrintWriter(
-                        cliente.getOutputStream(), true
-                )
-                ) {
+                System.out.println("¡Nuevo cliente conectado desde " + cliente.getInetAddress() + "!");
 
-            System.out.println("Cliente conectado");
-            // Recuperar operación del cliente
-            String operacion;
-            while ((operacion = in.readLine()) != null && !operacion.equals("Exit")){
-                // Recuperar la cadena deel cliente
-                String cadena = null;
-                switch (operacion){
-                    case "Cifrar":
-                        out.println("Pasame la cadena");
-                        cadena = in.readLine();
-                        out.println(cifrarCadena(cadena));
-                        break;
-                    case "Descifrar":
-                        out.println("Pasame la cadena");
-                        cadena = in.readLine();
-                        out.println(descifrarCadena(cadena));
-                        break;
-                    default:
-                        out.println("Operación no válida");
-                }
+                // Instacioamos el hilo sin bloquear el servidor
+                new ClienteHandler(cliente).start();
             }
-            out.println("Adios");
 
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-    }
-
-    public static String cifrarCadena(String cadena) {
-        int rango = ('z' - 'a') + 1;
-        int desplazamiento = 3;
-        String resultado = "";
-        for (int i = 0; i < cadena.length(); i++) {
-            char c = cadena.charAt(i);
-
-            if (c >= 'a' && c<= 'z'){
-                resultado += (char) (((c - 'a' + desplazamiento) % rango) + 'a');
-            }else if(c >= 'A' && c<= 'Z'){
-                resultado += (char) (((c-'A' + desplazamiento) % rango) + 'A');
-            }else {
-                resultado += c;
-            }
-        }
-        return resultado;
-    }
-
-    public static String descifrarCadena(String cadena) {
-        int rango = ('z' - 'a') + 1;
-        int desplazamiento = 3;
-        String resultado = "";
-        for (int i = 0; i < cadena.length(); i++) {
-            char c = cadena.charAt(i);
-
-            if (c >= 'a' && c<= 'z'){
-                resultado += (char) (((c - 'a' - desplazamiento + rango) % rango) + 'a');
-            }else if(c >= 'A' && c<= 'Z'){
-                resultado += (char) (((c-'A' - desplazamiento + rango) % rango) + 'A');
-            }else {
-                resultado += c;
-            }
-        }
-        return resultado;
     }
 }
 
