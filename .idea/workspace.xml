@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cfd04dfc-aefd-41bf-beb7-12e082ee1374" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sockets/src/EjercicioClase1/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sockets/src/EjercicioClase1/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sockets/src/EjercicioClase1/Servidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sockets/src/EjercicioClase1/Servidor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sockets/src/Practica1/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sockets/src/Practica1/Ejercicio1/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sockets/src/Practica1/Servidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sockets/src/Practica1/Ejercicio1/Servidor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sockets/EjercicioClase1/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sockets/EjercicioClase1/Cliente.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,11 +54,11 @@
 }</component>
   <component name="RunManager">
     <configuration name="Cliente" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="EjercicioClase1.Cliente" />
+      <option name="MAIN_CLASS_NAME" value="Practica1.Ejercicio2.Cliente" />
       <module name="Sockets" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="EjercicioClase1.*" />
+          <option name="PATTERN" value="Practica1.Ejercicio2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
