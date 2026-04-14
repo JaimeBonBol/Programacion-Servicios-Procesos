@@ -1,0 +1,21 @@
+CATEGORIA;PREGUNTA;OPCION_A;OPCION_B;OPCION_C;OPCION_D;RESPUESTA_CORRECTA
+Redes;¿Cuál es el puerto por defecto de HTTP?;21;80;443;8080;b
+Java;¿Qué clase crea un servidor TCP?;Socket;DatagramSocket;ServerSocket;SocketServer;c
+Sistemas Operativos;¿Cuál de los siguientes NO es un sistema operativo basado en Linux?;Ubuntu;Debian;FreeBSD;Fedora;c
+Bases de Datos;¿Qué significa SQL?;Structured Query Language;Simple Query Language;Standard Query Logic;System Quality Level;a
+Java;¿Qué modificador de acceso permite visibilidad solo dentro de la misma clase?;public;protected;default;private;d
+Redes;¿En qué capa del modelo OSI trabaja un router?;Capa de Enlace;Capa de Red;Capa de Transporte;Capa de Aplicación;b
+Programación;¿Cuál de estos lenguajes es puramente orientado a objetos?;C;Java;Python;Ruby;b
+Web;¿Qué significa HTML?;Hyper Text Markup Language;Home Tool Markup Language;Hyperlinks and Text Markup Language;Hyper Tool Multi Language;a
+Sistemas Operativos;¿Cuál es el comando de Linux para listar los archivos de un directorio?;cd;pwd;ls;mkdir;c
+Bases de Datos;¿Qué tipo de base de datos es MongoDB?;Relacional;Orientada a Grafos;Documental (NoSQL);Clave-Valor;c
+Java;¿Qué estructura de datos garantiza que los elementos no estén duplicados?;List;Set;Map;Array;b
+Redes;¿Qué protocolo se utiliza para el envío de correos electrónicos?;POP3;IMAP;SMTP;FTP;c
+Hardware;¿Qué significa CPU?;Central Process Unit;Computer Personal Unit;Central Processor Unit;Central Processing Unit;d
+Cultura General;¿En qué año se lanzó la primera versión de la World Wide Web?;1985;1989;1991;1995;c
+Java;¿Qué palabra reservada se usa para heredar de una clase?;implements;extends;inherits;super;b
+Web;¿Para qué sirve CSS?;Para definir la estructura de la web;Para dar estilo y diseño;Para programar la lógica del cliente;Para conectar con la base de datos;b
+Sistemas Operativos;¿Qué empresa desarrolla Windows?;Apple;Google;IBM;Microsoft;d
+Seguridad;¿Qué es un ataque DDoS?;Distributed Denial of Service;Direct Data over System;Device Denial of Security;Data Distribution of Servers;a
+Redes;¿Qué puerto utiliza HTTPS por defecto?;80;443;22;21;b
+Programación;¿Cuál es el símbolo del operador lógico AND en Java?;||;&&;!=;==;b
